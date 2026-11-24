@@ -1,0 +1,64 @@
+{
+  "artistas": [
+    {
+      "id": 1,
+      "nombre": "Aurora Vega",
+      "genero": "Pop",
+      "pais": "Colombia"
+    },
+    {
+      "id": 2,
+      "nombre": "Los Tambores del Sur",
+      "genero": "Folclor",
+      "pais": "Argentina"
+    },
+    {
+      "id": 3,
+      "nombre": "Neon Pulse",
+      "genero": "Electrónica",
+      "pais": "Alemania"
+    },
+    {
+      "id": 4,
+      "nombre": "Marea Roja",
+      "genero": "Rock",
+      "pais": "México"
+    },
+    {
+      "nombre": "Los Andes",
+      "genero": "Rock",
+      "pais": "Chile",
+      "id": 5
+    }
+  ],
+  "presentaciones": [
+    {
+      "id": 2,
+      "artistaId": 2,
+      "escenario": "Escenario Tierra",
+      "fecha": "2026-12-05",
+      "hora": "18:30"
+    },
+    {
+      "id": 3,
+      "artistaId": 3,
+      "escenario": "Carpa Electrónica",
+      "fecha": "2026-12-06",
+      "hora": "23:00"
+    },
+    {
+      "id": 4,
+      "artistaId": 1,
+      "escenario": "Escenario Tierra",
+      "fecha": "2026-12-06",
+      "hora": "17:00"
+    },
+    {
+      "artistaId": 5,
+      "escenario": "Escenario Principal",
+      "fecha": "2026-11-23",
+      "hora": "19:41",
+      "id": 5
+    }
+  ]
+}
