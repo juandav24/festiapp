@@ -1,0 +1,140 @@
+{
+  "info": {
+    "name": "FestiApp - Pruebas API REST",
+    "description": "Colección de pruebas GET, POST y DELETE sobre los recursos /artistas y /presentaciones de FestiApp (JSON Server).",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3001"
+    }
+  ],
+  "item": [
+    {
+      "name": "1. GET /artistas",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/artistas",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "artistas"
+          ]
+        }
+      }
+    },
+    {
+      "name": "2. POST /artistas",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"Sol Naciente\",\n  \"genero\": \"Indie\",\n  \"pais\": \"Perú\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/artistas",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "artistas"
+          ]
+        }
+      }
+    },
+    {
+      "name": "3. GET /presentaciones",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/presentaciones",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "presentaciones"
+          ]
+        }
+      }
+    },
+    {
+      "name": "4. POST /presentaciones",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"artistaId\": 6,\n  \"escenario\": \"Carpa Acústica\",\n  \"fecha\": \"2026-12-07\",\n  \"hora\": \"21:30\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/presentaciones",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "presentaciones"
+          ]
+        }
+      }
+    },
+    {
+      "name": "5. DELETE /presentaciones/5",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/presentaciones/5",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "presentaciones",
+            "5"
+          ]
+        }
+      }
+    },
+    {
+      "name": "6. GET /presentaciones (verificación)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/presentaciones",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "presentaciones"
+          ]
+        }
+      }
+    }
+  ]
+}
